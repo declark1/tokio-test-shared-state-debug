@@ -28,7 +28,7 @@ mod test {
     }
 
     #[tokio::test]
-    // #[serial]
+    #[serial]
     async fn test_two() {
         println!("running test_two");
         let _ctx = CONTEXT.get_or_init(init_context).await;
